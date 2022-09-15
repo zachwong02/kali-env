@@ -10,6 +10,14 @@ wget https://github.com/carlospolop/PEASS-ng/releases/download/20220911/linpeas.
 
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
+cd ~
+
+curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
+
+cd /tmp
+
+sudo chmod +x nodesource_setup.sh
+
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg
 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
@@ -17,6 +25,8 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get full-upgrade
 sudo apt-get install apt-transport-https
-sudo apt-get install sublime-text foremost binwalk steghide exiftool sonic-visualiser
+sudo apt-get install sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm
+
+sudo npm install snyk
 
 
