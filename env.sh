@@ -25,8 +25,8 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get full-upgrade
 sudo apt-get install apt-transport-https
-sudo apt-get install sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm
+sudo apt-get install sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator
 
-sudo npm install snyk
+sudo npm install snyk -g
 
 
