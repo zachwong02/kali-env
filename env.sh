@@ -8,6 +8,8 @@ wget https://raw.githubusercontent.com/pentestmonkey/php-reverse-shell/master/ph
 
 wget https://github.com/carlospolop/PEASS-ng/releases/download/20220911/linpeas.sh -O linpeas.sh
 
+wget https://raw.githubusercontent.com/plackyhacker/ps-encoder/main/ps-encoder.py -O ps-encoder.py
+
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
 cd ~
