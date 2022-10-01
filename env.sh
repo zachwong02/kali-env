@@ -25,15 +25,28 @@ wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
 sudo apt update
-sudo apt full-upgrade
-sudo apt install apt-transport-https
-sudo apt install sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra qemu-user-static binfmt-support
+sudo apt full-upgrade -y
+sudo apt install -y apt-transport-https
+sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra qemu-user-static binfmt-support lolcat figlet boxes
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture i386
 sudo apt update
-sudo apt install libc6:amd64
-sudo apt install libc6:i386
+sudo apt install -y libc6:amd64 libc6:i386
 
 sudo npm install snyk -g
+
+
+figlet "REMEMBER TO ADD THESE TO FIREFOX" | boxes -d shell | lolcat
+echo "\n\n"
+echo "https://gchq.github.io/CyberChef/"
+echo "https://www.dcode.fr/cipher-identifier"
+echo "https://hashes.com/en/tools/hash_identifier"
+echo "https://www.branah.com/ascii-converter"
+echo "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"
+echo "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/"
+echo "\n\n"
+echo "######################################################################" | lolcat
+
+
 
 
