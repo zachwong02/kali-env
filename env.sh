@@ -35,17 +35,16 @@ sudo apt install -y libc6:amd64 libc6:i386
 
 sudo npm install snyk -g
 
-
-figlet "REMEMBER TO ADD THESE TO FIREFOX" | boxes -d shell | lolcat
-echo "\n\n"
+bold=$(tput bold)
+echo "${bold}REMEMBER TO ADD THESE TO FIREFOX$" 
+"######################################################################"
 echo "https://gchq.github.io/CyberChef/"
 echo "https://www.dcode.fr/cipher-identifier"
 echo "https://hashes.com/en/tools/hash_identifier"
 echo "https://www.branah.com/ascii-converter"
 echo "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"
 echo "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/"
-echo "\n\n"
-echo "######################################################################" | lolcat
+echo "######################################################################"
 
 
 
