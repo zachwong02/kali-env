@@ -37,13 +37,13 @@ sudo npm install snyk -g
 
 bold=$(tput bold)
 echo "${bold}REMEMBER TO ADD THESE TO FIREFOX$" 
-"######################################################################"
-echo "https://gchq.github.io/CyberChef/"
-echo "https://www.dcode.fr/cipher-identifier"
-echo "https://hashes.com/en/tools/hash_identifier"
-echo "https://www.branah.com/ascii-converter"
-echo "https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/"
-echo "https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/"
+echo "######################################################################"
+echo "# https://gchq.github.io/CyberChef/                                  #"
+echo "# https://www.dcode.fr/cipher-identifier                             #"
+echo "# https://hashes.com/en/tools/hash_identifier                        #"
+echo "# https://www.branah.com/ascii-converter                             #" 
+echo "# https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ #"
+echo "# https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/         #"
 echo "######################################################################"
 
 
