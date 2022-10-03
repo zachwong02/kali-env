@@ -35,6 +35,8 @@ sudo apt install -y libc6:amd64 libc6:i386
 
 sudo npm install snyk -g
 
+
+clear
 bold=$(tput bold)
 echo "${bold}REMEMBER TO ADD THESE TO FIREFOX$" 
 echo "######################################################################"
