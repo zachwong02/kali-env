@@ -27,7 +27,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt full-upgrade -y
 sudo apt install -y apt-transport-https
-sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra qemu-user-static binfmt-support gimp imagemagick
+sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra qemu-user-static binfmt-support gimp imagemagick yt-dlp
 sudo dpkg --add-architecture amd64
 sudo dpkg --add-architecture i386
 sudo apt update
