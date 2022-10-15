@@ -27,7 +27,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt full-upgrade -y
 sudo apt install -y apt-transport-https
-sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra gimp imagemagick yt-dlp
+sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra gimp imagemagick yt-dlp lz4 lzip lzop
 
 arch=$(uname -m)
 
@@ -35,7 +35,7 @@ if [[ $arch == "aarch64" || $arch == "arm64" ]]; then
 	sudo dpkg --add-architecture amd64
 	sudo dpkg --add-architecture i386
 	sudo apt update
-	sudo apt install -y libc6:amd64 libc6:i386 qemu-user-static binfmt-support
+	sudo apt install -y libc6:amd64 libc6:i386 qemu-user-static binfmt-support burpsuite
 fi
 
 
@@ -56,6 +56,7 @@ echo "# https://hashes.com/en/tools/hash_identifier                        #"
 echo "# https://www.branah.com/ascii-converter                             #" 
 echo "# https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ #"
 echo "# https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/         #"
+echo "# https://chmodcommand.com/				           #"
 echo "######################################################################"
 
 
