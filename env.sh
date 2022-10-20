@@ -12,6 +12,8 @@ wget https://raw.githubusercontent.com/plackyhacker/ps-encoder/main/ps-encoder.p
 
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
+git clone https://github.com/internetwache/GitTools.git
+
 cd ~
 
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
