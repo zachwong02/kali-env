@@ -14,6 +14,12 @@ wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
 git clone https://github.com/internetwache/GitTools.git
 
+git clone https://github.com/htr-tech/zphisher.git
+
+git clone https://github.com/vlohacks/encrack.git
+
+git clone https://github.com/thosearetheguise/decrypt-openssl-bruteforce.git
+
 cd ~
 
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
