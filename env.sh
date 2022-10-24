@@ -20,6 +20,8 @@ git clone https://github.com/vlohacks/encrack.git
 
 git clone https://github.com/thosearetheguise/decrypt-openssl-bruteforce.git
 
+git clone https://github.com/samratashok/nishang.git
+
 cd ~
 
 curl -sL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh
