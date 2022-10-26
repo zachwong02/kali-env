@@ -50,7 +50,7 @@ fi
 
 
 if [[ $arch == "x86_64" ]]; then
-	sudo apt install -y gdb ltrace
+	sudo apt install -y gdb ltrace strace
 fi
 
 sudo npm install snyk -g
