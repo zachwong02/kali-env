@@ -12,6 +12,10 @@ wget https://raw.githubusercontent.com/plackyhacker/ps-encoder/main/ps-encoder.p
 
 wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
+wget https://github.com/colaclanth/sstv.git
+
+python setup.py install
+
 git clone https://github.com/internetwache/GitTools.git
 
 git clone https://github.com/htr-tech/zphisher.git
@@ -67,7 +71,7 @@ echo "# https://www.branah.com/ascii-converter                             #"
 echo "# https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/ #"
 echo "# https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/         #"
 echo "# https://chmodcommand.com/				           #"
-echo "https://gtfobins.github.io/					   #"
+echo "# https://gtfobins.github.io/					   #"
 echo "######################################################################"
 
 
