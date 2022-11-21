@@ -1,2 +1,2 @@
 # kali-env
-My Kali Linux CTF / Red Teaming Tools
+My Kali Linux CTF Tools for aarch64 installation of Kali Linux
