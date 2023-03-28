@@ -53,7 +53,7 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt update
 sudo apt full-upgrade -y
 sudo apt install -y apt-transport-https
-sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra gimp imagemagick yt-dlp lz4 lzip lzop libreoffice stegcracker gh seclist bruteforce-salted-openssl docker.io
+sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visualiser nodejs npm terminator ghidra gimp imagemagick yt-dlp lz4 lzip lzop libreoffice stegcracker gh seclists bruteforce-salted-openssl docker.io
 
 gh auth login
 
