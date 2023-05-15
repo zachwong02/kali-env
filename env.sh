@@ -14,8 +14,6 @@ wget http://www.caesum.com/handbook/Stegsolve.jar -O stegsolve.jar
 
 wget https://github.com/colaclanth/sstv.git
 
-python setup.py install
-
 git clone https://github.com/internetwache/GitTools.git
 
 git clone https://github.com/htr-tech/zphisher.git
@@ -25,6 +23,8 @@ git clone https://github.com/vlohacks/encrack.git
 git clone https://github.com/thosearetheguise/decrypt-openssl-bruteforce.git
 
 git clone https://github.com/samratashok/nishang.git
+
+git clone https://github.com/wavestone-cdt/powerpxe.git
 
 mkdir pspy
 
