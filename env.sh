@@ -71,6 +71,7 @@ if [[ $arch == "aarch64" || $arch == "arm64" ]]; then
 	sudo docker exec -it pwnbox apt update
 	sudo docker exec -it pwnbox apt install -y gdb ltrace strace
 	sudo docker exec -it pwnbox dpkg --add-architecture i386
+	sudo docker exec -it pwnbox apt update
 	sudo docker exec -it pwnbox apt install -y libc6:i386
 	cd ~
 	echo 'sudo docker exec -it pwnbox bash' > pwnbox
