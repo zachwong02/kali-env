@@ -66,6 +66,15 @@ if [[ $arch == "aarch64" || $arch == "arm64" ]]; then
 	sudo dpkg --add-architecture i386
 	sudo apt update
 	sudo apt install -y libc6:amd64 libc6:i386 qemu-user-static binfmt-support burpsuite gcc-x86-64-linux-gnu
+	mkdir /home/jigsaw/challenges
+	sudo docker run -d -it --name pwnbox -v /home/jigsaw/challenges:/shared --restart=unless-stopped --platform linux/amd64 ubuntu
+	sudo docker exec -it pwnbox apt update
+	sudo docker exec -it pwnbox apt install -y gdb ltrace strace
+	dpkg --add-architecture i386
+	apt install -y libc6:i386
+	cd ~
+	echo 'sudo docker exec -it pwnbox bash' > pwnbox
+	sudo mv pwnbox /usr/bin
 fi
 
 
