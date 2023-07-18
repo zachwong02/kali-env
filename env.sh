@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 mkdir ~/tools
 
 cd ~/tools
@@ -57,6 +58,34 @@ sudo apt install -y sublime-text foremost binwalk steghide exiftool sonic-visual
 
 gh auth login
 
+git config --global user.name "$username"
+
+git config --global user.email "$email"
+
+cd /tmp
+
+wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python2 get-pip.py
+
+sudo chown jigsaw:jigsaw /opt
+
+cd /opt
+
+git clone https://github.com/miszr/volatility.git
+
+git branches
+
+git checkout dwarf-5
+
+git merge /origin/patch-1
+
+sudo apt update
+sudo apt install -y python2.7
+sudo apt install -y build-essential python2.7-dev
+pip2 install setuptools
+pip2 install distorm3==3.4.4
+pip2 install pycrypto
+
 cd ~
 
 arch=$(uname -m)
@@ -69,7 +98,7 @@ if [[ $arch == "aarch64" || $arch == "arm64" ]]; then
 	mkdir /home/jigsaw/challenges
 	sudo docker run -d -it --name pwnbox -v /home/jigsaw/challenges:/shared --restart=unless-stopped --platform linux/amd64 ubuntu
 	sudo docker exec -it pwnbox apt update
-	sudo docker exec -it pwnbox apt install -y gdb ltrace strace
+	sudo docker exec -it pwnbox apt install -y gdb ltrace strace binutils unzip
 	sudo docker exec -it pwnbox dpkg --add-architecture i386
 	sudo docker exec -it pwnbox apt update
 	sudo docker exec -it pwnbox apt install -y libc6:i386
