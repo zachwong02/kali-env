@@ -73,11 +73,11 @@ cd /opt
 
 git clone https://github.com/miszr/volatility.git
 
-git branches
+git branch -a
 
 git checkout dwarf-5
 
-git merge /origin/patch-1
+git merge origin/patch-1
 
 sudo apt update
 sudo apt install -y python2.7
