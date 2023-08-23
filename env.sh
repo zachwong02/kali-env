@@ -5,16 +5,18 @@
 git_username=$1
 git_email=$2
 
-if [[ git_username == "" ]]; then
+if [[ $git_username == "" ]]; then
 	echo "Please put in your git username in the first parameter"
 	exit 0
 fi
 
-if [[ git_email == "" ]]; then
+if [[ $git_email == "" ]]; then
 	echo "Please put in your git email in the second parameter"
 	exit 0
 fi
 
+# Unpack rockyou.txt
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz
 
 # Download Tools
 mkdir ~/tools
@@ -32,6 +34,8 @@ git clone https://github.com/wavestone-cdt/powerpxe.git
 git clone https://github.com/PowerShellMafia/PowerSploit.git
 git clone https://github.com/ropnop/windapsearch.git
 
+# Move Rubeus.exe to tools
+mv ./bin/Rubeus.exe ~/tools
 
 # Download pspy
 cd ~/tools
