@@ -123,9 +123,10 @@ wget https://bootstrap.pypa.io/pip/2.7/get-pip.py
 sudo python2 get-pip.py
 cd /opt
 git clone https://github.com/miszr/volatility.git
+cd volatility
 git branch -a
 git checkout dwarf-5
-git merge origin/patch-1
+git merge origin/patch-1  --no-edit
 sudo apt update
 sudo apt install -y python2.7
 sudo apt install -y build-essential python2.7-dev
