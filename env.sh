@@ -33,6 +33,7 @@ git clone https://github.com/samratashok/nishang.git
 git clone https://github.com/wavestone-cdt/powerpxe.git
 git clone https://github.com/PowerShellMafia/PowerSploit.git
 git clone https://github.com/ropnop/windapsearch.git
+git clone https://github.com/unode/firefox_decrypt.git
 
 # Move Rubeus.exe to tools
 mv ./bin/Rubeus.exe ~/tools
